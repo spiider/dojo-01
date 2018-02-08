@@ -1,0 +1,130 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0 40px;
+  max-width: var(--max-content-width);
+  height: 700px;
+}
+
+.title {
+  margin-left: 10px;
+}
+
+.search {
+  float: left;
+  width: 195px;
+  margin: 10px;
+  position: relative;
+}
+
+.searchBox {
+  border: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.searchBox:active, .searchBox:focus {
+  outline: 0;
+  border: none;
+}
+
+.searchBox ~ .focusBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3d2b5f;
+  transition: 0.4s;
+  outline: none;
+}
+
+.searchBox:focus ~ .focusBorder,
+.has-content.searchBox ~ .focusBorder {
+  width: 100%;
+  transition: 0.4s;
+  outline: none;
+}
+.searchBox ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 8px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+
+.searchBox:focus ~ label, .has-content.searchBox ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #3d2b5f;
+  transition: 0.3s;
+  outline: none;
+}
+
+
+
+.heroesList {
+  display: block;
+  clear: both;
+}
+
+.heroeCard {
+  width: 300px;
+  height: 120px;
+  float: left;
+  margin: 10px;
+  background-size: cover;
+  border-radius: 5px;
+  background-color: gainsboro;
+  cursor: pointer;
+
+  img {
+    float: left;
+    margin-top: 5px;
+  }
+}
+
+.loader {
+  clear: both;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.heroName {
+  float: left;
+  font-size: 36px;
+  color: #0074c2;
+  text-transform: capitalize;
+}
+.rootNoRes {
+  width: 100%;
+}
+.NoResults {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 45px;
+  clear: both;
+  float: left;
+}
